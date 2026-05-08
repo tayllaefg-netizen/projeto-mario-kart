@@ -1,7 +1,7 @@
 <div align="center">
 
 
-# 🏎️ Projeto Mario Kart - DIO
+#  Projeto Mario Kart - DIO
 
 
 <img src="docs/pernalonga-baby-looney-tunes-fcm.jpg" alt="Pernalonga" width="180">
