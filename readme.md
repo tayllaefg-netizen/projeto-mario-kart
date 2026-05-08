@@ -1,7 +1,16 @@
-# 🏎️ Projeto Mario Kart
+<div align="center">
 
 
-Projeto em **JavaScript** que simula uma corrida inspirada em jogos no estilo Mario Kart. A aplicação usa personagens com atributos diferentes, sorteio de pistas, rolagem de dados e cálculo de pontos para definir o vencedor da corrida.
+# 🏎️ Projeto Mario Kart - DIO
+
+
+<img src="docs/pernalonga-baby-looney-tunes-fcm.jpg" alt="Pernalonga" width="180">
+
+
+Projeto desenvolvido durante o desafio **Mario Kart da DIO**, usando **JavaScript** e **Node.js** para simular uma corrida no terminal.
+
+
+</div>
 
 
 ---
@@ -10,7 +19,7 @@ Projeto em **JavaScript** que simula uma corrida inspirada em jogos no estilo Ma
 ## 📌 Sobre o projeto
 
 
-Este projeto foi desenvolvido para praticar **lógica de programação** com JavaScript, criando uma pequena engine de corrida executada no terminal. Durante a partida, dois personagens competem por 5 rodadas em blocos aleatórios de pista.
+Este projeto foi desenvolvido para praticar **lógica de programação** com JavaScript, criando uma pequena engine de corrida executada no terminal. Durante a partida, **Pernalonga** e **Piu-Piu** competem por 5 rodadas em blocos aleatórios de pista.
 
 
 A cada rodada, o sistema sorteia o tipo de desafio, calcula o desempenho dos jogadores e atualiza o placar até chegar ao resultado final.
@@ -48,10 +57,16 @@ Ao final de 5 rodadas, vence o personagem que tiver mais pontos.
 ## 🧩 Personagens
 
 
-| Personagem | Velocidade | Manobrabilidade | Poder |
-| --- | ---: | ---: | ---: |
-| 🐰 Pernalonga | 4 | 3 | 3 |
-| 🐤 Piu-Piu | 3 | 4 | 4 |
+<div align="center">
+
+
+| Personagem | Imagem | Velocidade | Manobrabilidade | Poder |
+| --- | --- | ---: | ---: | ---: |
+| 🐰 **Pernalonga** | <img src="docs/pernalonga-baby-looney-tunes-fcm.jpg" alt="Pernalonga" width="90"> | 4 | 3 | 3 |
+| 🐤 **Piu-Piu** | <img src="docs/piu%20piu.jpeg" alt="Piu-Piu" width="90"> | 3 | 4 | 4 |
+
+
+</div>
 
 
 ---
