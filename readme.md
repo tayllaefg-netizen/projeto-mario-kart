@@ -1,106 +1,205 @@
-<h1>Desafio de projeto do Felipão: Pernalonga Kart.JS</h1>
+# 🏎️ Projeto Mario Kart
 
-<table>
-  <tr>
-    <td>
-      <img src="docs/pernalonga-baby-looney-tunes-fcm.jpg" alt="Pernalonga" width="200">
-    </td>
-    <td>
-      <b>Objetivo:</b>
-      <p>Pernalonga é uma simulação de corrida inspirada em jogos de corrida. Nosso desafio será criar uma lógica de um jogo de vídeo game para simular corridas, levando em consideração as regras e mecânicas abaixo.</p>
-    </td>
-  </tr>
-</table>
 
-<h2>Players</h2>
-<table style="border-collapse: collapse; width: 800px; margin: 0 auto;">
-  <tr>
-    <td style="border: 1px solid black; text-align: center;">
-      <p>Pernalonga</p>
-      <img src="docs/pernalonga-baby-looney-tunes-fcm.jpg" width="60" height="60">
-    </td>
-    <td style="border: 1px solid black; text-align: center;">
-      <p>Velocidade: 4</p>
-      <p>Manobrabilidade: 3</p>
-      <p>Poder: 3</p>
-    </td>
+Projeto em **JavaScript** que simula uma corrida inspirada em jogos no estilo Mario Kart. A aplicação usa personagens com atributos diferentes, sorteio de pistas, rolagem de dados e cálculo de pontos para definir o vencedor da corrida.
 
-    <td style="border: 1px solid black; text-align: center;">
-      <p>Piu-Piu</p>
-      <img src="./docs/piu piu.jpeg" width="60" height="60">
-    </td>
-    <td style="border: 1px solid black; text-align: center;">
-      <p>Velocidade: 3</p>
-      <p>Manobrabilidade: 4</p>
-      <p>Poder: 2</p>
-    </td>
 
-    <td style="border: 1px solid black; text-align: center;">
-      <p>Patolino</p>
-      <img src="./docs/patolino.gif" width="60" height="60">
-    </td>
-    <td style="border: 1px solid black; text-align: center;">
-      <p>Velocidade: 2</p>
-      <p>Manobrabilidade: 4</p>
-      <p>Poder: 3</p>
-    </td>
-  </tr>
+---
 
-  <tr>
-    <td style="border: 1px solid black; text-align: center;">
-      <p>Taz</p>
-      <img src="./docs/taz.jpg" width="60" height="60">
-    </td>
-    <td style="border: 1px solid black; text-align: center;">
-      <p>Velocidade: 5</p>
-      <p>Manobrabilidade: 2</p>
-      <p>Poder: 5</p>
-    </td>
 
-    <td style="border: 1px solid black; text-align: center;">
-      <p>Frajola</p>
-      <img src="./docs/frajola.jpg" width="60" height="60">
-    </td>
-    <td style="border: 1px solid black; text-align: center;">
-      <p>Velocidade: 3</p>
-      <p>Manobrabilidade: 4</p>
-      <p>Poder: 4</p>
-    </td>
+## 📌 Sobre o projeto
 
-    <td style="border: 1px solid black; text-align: center;">
-      <p>Coyote</p>
-      <img src="./docs/coyote.png" width="60" height="60">
-    </td>
-    <td style="border: 1px solid black; text-align: center;">
-      <p>Velocidade: 2</p>
-      <p>Manobrabilidade: 2</p>
-      <p>Poder: 5</p>
-    </td>
-  </tr>
-</table>
 
-<h3>🕹️ Regras & mecânicas:</h3>
+Este projeto foi desenvolvido para praticar **lógica de programação** com JavaScript, criando uma pequena engine de corrida executada no terminal. Durante a partida, dois personagens competem por 5 rodadas em blocos aleatórios de pista.
 
-<b>Jogadores:</b>
 
-<input type="checkbox" />
-<label>O Computador deve receber dois personagens para disputar a corrida em um objeto cada</label>
+A cada rodada, o sistema sorteia o tipo de desafio, calcula o desempenho dos jogadores e atualiza o placar até chegar ao resultado final.
 
-<b>Pistas:</b>
 
-<ul>
-  <li><input type="checkbox" /> Os personagens irão correr em uma pista aleatória de 5 rodadas</li>
-  <li><input type="checkbox" /> A cada rodada, será sorteado um bloco da pista que pode ser uma reta, curva ou confronto
-    <ul>
-      <li><input type="checkbox" /> RETA → dado + VELOCIDADE</li>
-      <li><input type="checkbox" /> CURVA → dado + MANOBRABILIDADE</li>
-      <li><input type="checkbox" /> CONFRONTO → dado + PODER (perdedor perde ponto)</li>
-      <li><input type="checkbox" /> Nenhum jogador pode ter pontuação negativa</li>
-    </ul>
-  </li>
-</ul>
+---
 
-<b>Condição de vitória:</b>
 
-<input type="checkbox" />
-<label>Ao final, vence quem acumulou mais pontos</label>
+## 🎮 Como funciona
+
+
+Cada personagem possui atributos próprios:
+
+
+- **Velocidade**: usada em trechos de reta
+- **Manobrabilidade**: usada em curvas
+- **Poder**: usado em confrontos
+- **Pontos**: representam o placar da corrida
+
+
+Em cada rodada, um bloco de pista é sorteado:
+
+
+- **RETA**: dado + velocidade
+- **CURVA**: dado + manobrabilidade
+- **CONFRONTO**: dado + poder
+
+
+Ao final de 5 rodadas, vence o personagem que tiver mais pontos.
+
+
+---
+
+
+## 🧩 Personagens
+
+
+| Personagem | Velocidade | Manobrabilidade | Poder |
+| --- | ---: | ---: | ---: |
+| 🐰 Pernalonga | 4 | 3 | 3 |
+| 🐤 Piu-Piu | 3 | 4 | 4 |
+
+
+---
+
+
+## 🚀 Funcionalidades
+
+
+- Sorteio automático de blocos da pista
+- Rolagem de dados aleatória
+- Comparação de atributos entre personagens
+- Sistema de pontuação
+- Confrontos entre jogadores
+- Placar atualizado a cada rodada
+- Resultado final com vencedor ou empate
+
+
+---
+
+
+## 🛠️ Tecnologias utilizadas
+
+
+<div align="center">
+
+
+![JavaScript](https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Node.js](https://img.shields.io/badge/Node.js-0d1117?style=for-the-badge&logo=node.js&logoColor=339933)
+![Git](https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=F05032)
+![GitHub](https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=white)
+
+
+</div>
+
+
+---
+
+
+## 📂 Estrutura do projeto
+
+
+```bash
+projeto-mario-kart/
+├── docs/
+│   ├── coyote.png
+│   ├── frajola.jpg
+│   ├── images.png
+│   ├── pernalonga-baby-looney-tunes-fcm.jpg
+│   ├── piu piu.jpeg
+│   └── taz.jpg
+├── index.js
+├── package.json
+└── readme.md
+```
+
+
+---
+
+
+## ▶️ Como executar
+
+
+Clone o repositório:
+
+
+```bash
+git clone https://github.com/tayllaefg-netizen/projeto-mario-kart.git
+```
+
+
+Acesse a pasta:
+
+
+```bash
+cd projeto-mario-kart
+```
+
+
+Execute o projeto:
+
+
+```bash
+node index.js
+```
+
+
+---
+
+
+## 💻 Exemplo de saída
+
+
+```bash
+🏎️ CORRIDA MALUCA COMEÇANDO
+
+
+🐰 Pernalonga 🆚 🐤 Piu-Piu
+
+
+🏁 RODADA 1
+📍 Bloco sorteado: RETA
+🎲 Pernalonga rolou um dado
+🎲 Piu-Piu rolou um dado
+
+
+📊 PLACAR:
+Pernalonga: 1
+Piu-Piu: 0
+```
+
+
+---
+
+
+## 🧠 Conceitos praticados
+
+
+- Objetos em JavaScript
+- Funções assíncronas
+- Sorteio com `Math.random()`
+- Estruturas condicionais
+- Laços de repetição
+- Manipulação de pontuação
+- Organização de regras de jogo
+- Execução de JavaScript com Node.js
+
+
+---
+
+
+## 📊 Status do projeto
+
+
+✅ Projeto desenvolvido para estudos e prática de lógica com JavaScript.
+
+
+---
+
+
+## 👩‍💻 Autora
+
+
+Feito por **Tayla**.
+
+
+[![GitHub](https://img.shields.io/badge/GitHub-tayllaefg--netizen-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tayllaefg-netizen)
+
+
+
+
+
